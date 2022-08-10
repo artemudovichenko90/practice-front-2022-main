@@ -4,7 +4,7 @@ import styles from './WhySquadhelp.module.sass';
 import articles from './whySquadhelp.json';
 const WhySquadhelp = () => {
   const showArticle = ({ img, alt, heading, content }, i) => (
-    <article className={styles.card}>
+    <article className={styles.card} key={i}>
       <img src={`${CONSTANTS.STATIC_IMAGES_PATH}${img}`} alt={alt} />
       <h3>{heading}</h3>
       <p>{content}</p>

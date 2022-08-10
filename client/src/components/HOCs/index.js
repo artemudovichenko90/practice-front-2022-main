@@ -1,2 +1,2 @@
-export { default as withPrivate } from './withPrivate';
-export { default as withOnlyNotAuthorizedUser } from './withOnlyNotAuthorizedUser';
+export { default as withAuthorized } from './withAuthorized';
+export { default as withNotAuthorized } from './withNotAuthorized';
