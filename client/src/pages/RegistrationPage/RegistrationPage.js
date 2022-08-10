@@ -162,7 +162,7 @@ message
               </span>
               . For assistance
               with launching a contest,
-              you can also call us at (877) 355-3585 or schedule a
+              you can also call us at {CONSTANTS.CONTACTS.PHONE} or schedule a
               <span
                 className={styles.orangeSpan}
               >

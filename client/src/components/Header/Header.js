@@ -88,8 +88,10 @@ class Header extends React.Component {
         </div>
         <div className={styles.loginSignnUpHeaders}>
           <div className={styles.numberContainer}>
-            <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-            <span>(877)&nbsp;355-3585</span>
+            <a className={styles.numberLink} href='tel:{CONSTANTS.CONTACTS.PHONE}'>
+              <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
+              <span>{CONSTANTS.CONTACTS.PHONE}</span>
+            </a>
           </div>
           <div className={styles.userButtonsContainer}>
             {this.renderLoginButtons()}
