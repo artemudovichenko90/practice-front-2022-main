@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import { getUserAction } from '../../actions/actionCreator';
 import Spinner from '../Spinner/Spinner';
 
-const PrivateHoc = (Component, props) => {
+const withPrivate = (Component, props) => {
   const mapStateToProps = (state) => state.userStore;
 
   const mapDispatchToProps = (dispatch) => ({
@@ -34,4 +34,4 @@ const PrivateHoc = (Component, props) => {
   return connect(mapStateToProps, mapDispatchToProps)(Hoc);
 };
 
-export default PrivateHoc;
+export default withPrivate;

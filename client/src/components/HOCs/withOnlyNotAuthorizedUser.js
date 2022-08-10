@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { onlyForNotAuthorize } from '../../actions/actionCreator';
 import Spinner from '../Spinner/Spinner';
 
-const OnlyNotAuthorizedUserHoc = (Component) => {
+const withOnlyNotAuthorizedUser = (Component) => {
   const mapStateToProps = (state) => state.userStore;
 
   const mapDispatchToProps = (dispatch) => ({
@@ -28,4 +28,4 @@ const OnlyNotAuthorizedUserHoc = (Component) => {
   return connect(mapStateToProps, mapDispatchToProps)(HocForLoginSignUp);
 };
 
-export default OnlyNotAuthorizedUserHoc;
+export default withOnlyNotAuthorizedUser;
