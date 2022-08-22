@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import LoginForm from '../../components/LoginForm/LoginForm';
+import LoginForm from '../../components/forms/LoginForm/LoginForm';
 import Logo from '../../components/Logo';
 import styles from './LoginPage.module.sass';
 import { clearErrorSignUpAndLogin } from '../../actions/actionCreator';

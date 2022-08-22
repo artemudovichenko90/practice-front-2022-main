@@ -4,7 +4,7 @@ import { Form, Formik } from 'formik';
 import { sendMessageAction } from '../../../../actions/actionCreator';
 import styles from './ChatInput.module.sass';
 import CONSTANTS from '../../../../constants';
-import FormInput from '../../../FormInput/FormInput';
+import FormInput from '../../../forms/FormInput/FormInput';
 import Schems from '../../../../validators/validationSchems';
 
 const ChatInput = (props) => {

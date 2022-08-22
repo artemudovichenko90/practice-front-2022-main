@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Formik, Form } from 'formik';
-import CONTANTS from '../../constants';
-import { setOffer, clearAddOfferError } from '../../actions/actionCreator';
+import CONTANTS from '../../../constants';
+import { setOffer, clearAddOfferError } from '../../../actions/actionCreator';
 import styles from './OfferForm.module.sass';
-import ImageUpload from '../InputComponents/ImageUpload/ImageUpload';
+import ImageUpload from '../ImageUpload/ImageUpload';
 import FormInput from '../FormInput/FormInput';
-import Schems from '../../validators/validationSchems';
-import Error from '../Error/Error';
+import Schems from '../../../validators/validationSchems';
+import Error from '../../Error/Error';
 
 const OfferForm = (props) => {
   const renderOfferInput = () => {
@@ -55,7 +55,7 @@ const OfferForm = (props) => {
   return (
     <div className={styles.offerContainer}>
       {addOfferError
-            && <Error data={addOfferError.data} status={addOfferError.status} clearError={clearOfferError} />}
+        && <Error data={addOfferError.data} status={addOfferError.status} clearError={clearOfferError} />}
       <Formik
         onSubmit={setOffer}
         initialValues={{

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Logo from '../../components/Logo';
 import RegistrationForm
-  from '../../components/RegistrationForm/RegistrationForm';
+  from '../../components/forms/RegistrationForm/RegistrationForm';
 import styles from './RegistrationPage.module.sass';
 import { clearErrorSignUpAndLogin } from '../../actions/actionCreator';
 import CONSTANTS from '../../constants';
