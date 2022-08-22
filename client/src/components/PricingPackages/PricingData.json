@@ -1,0 +1,44 @@
+[
+  {
+    "title": "standard",
+    "description": "standard managed contest",
+    "price": {
+      "currency": "us",
+      "amount": 1499
+    },
+    "options": [
+      "Initial branding consultation",
+      "Contest brief development",
+      "Ongoing contest support",
+      "Mid-contest consultation",
+      "Contest close-out consultation",
+      "Up to two additional phone calls with your branding consultant",
+      "Coordination of Validation Services - such as Audience Testing & Trademark Validation - 2X More Reports",
+      "One Complimentary Extension of Contest Timeline",
+      "$300 award to the winning creative"
+    ],
+    "color": "#e0b48d"
+  },
+  {
+    "title": "enterprise",
+    "description": "enterprise managed contest",
+    "price": {
+      "currency": "us",
+      "amount": 2999
+    },
+    "options": [
+      "All Features of Standard Managed Contest, PLUS",
+      "Daily contest management and progress reports",
+      "Unlimited phone calls with your branding consultant",
+      "Option for multi-name contest",
+      "Custom contracts and payment options",
+      "Premium domain curation (external)",
+      "Unlimited Extensions of Contest Timeline",
+      "Multi-stakeholder deliberation      ",
+      "Additional trademark screenings - 3X More Reports.",
+      "Premium Audience Testing - 5X More Responses",
+      "$500 award to the winning creative (highest award amount)"
+    ],
+    "color": "#e8b954"
+  }
+]

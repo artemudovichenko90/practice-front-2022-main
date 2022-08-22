@@ -1,0 +1,170 @@
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$padd: 15px;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: $padd;
+  font-size: 15px;
+  font-family: Raleway, sans-serif;
+}
+
+.page_heading {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 7px 0;
+}
+
+.page_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.package {
+  width: 100%;
+}
+
+.package_box {
+  display: none;
+}
+
+.package_box:hover {
+  box-shadow: 0 15px 15px #8f8f8f;
+  opacity: 1;
+}
+
+.normal_screen {
+  display: none;
+}
+
+.small_screen {
+  display: flex;
+  flex-direction: column;
+  border-width: 10px;
+  border-style: solid;
+  padding: 16px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.title_small_screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  display: none;
+}
+
+.currency {
+  display: flex;
+  margin-left: auto;
+  margin-top: 60px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.hide {
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item {
+  padding: 13px 0;
+  border-bottom: 2px solid #ddd;
+  font-size: 15px;
+}
+
+.item:last-child {
+  border: 0;
+}
+
+.button {
+  width: 100%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 45px;
+  border: 0;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: $sm) {
+  .container {
+    width: 750px;
+  }
+
+  .page_section {
+    flex-direction: row;
+  }
+
+  .package {
+    width: 300px;
+  }
+
+  .normal_screen {
+    display: block;
+  }
+
+  .small_screen {
+    display: none;
+  }
+
+  .package_box {
+    display: flex;
+    flex-direction: column;
+    border-width: 10px;
+    border-style: solid;
+    padding: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    opacity: .9;
+  }
+
+  .title {
+    font-size: 33px;
+  }
+
+  .description {
+    display: block;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #666;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .container {
+    width: 970px;
+  }
+
+  .package {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .container {
+    width: 1170px;
+    font-size: 18px;
+  }
+}
