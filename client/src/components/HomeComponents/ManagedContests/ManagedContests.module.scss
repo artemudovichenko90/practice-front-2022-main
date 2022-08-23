@@ -1,0 +1,146 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+.title {
+  margin-top: 100px;
+  font-size: 32px;
+  color: #343a40;
+}
+
+.subtitle {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #212529;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #77838f;
+  line-height: 1.7;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.headingWrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+}
+
+.heading {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #343a40;
+}
+
+.content {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+  color: #77838f;
+}
+
+.button {
+  margin: 40px 0;
+  padding: 12px 16px;
+  text-transform: capitalize;
+  color: #007bff;
+  background-color: white;
+  border-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media screen and (min-width: $sm) {
+
+  .container {
+    width: 510px;
+  }
+
+  .cardContainer {
+    justify-content: center;
+  }
+
+  .card {
+    width: 195px;
+    margin: 20px;
+  }
+
+  .headingWrap {
+    flex-direction: column;
+  }
+
+  .heading {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: $md) {
+
+  .container {
+    width: 700px;
+  }
+
+  .headingWrap {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 230px;
+    margin: 15px;
+
+  }
+}
+
+@media screen and (min-width: $lg) {
+
+  .container {
+    width: 900px;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+}
+
+@media screen and (min-width: $xl) {
+
+  .container {
+    width: 1200px;
+  }
+
+}
